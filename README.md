@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository provides a **portable**, **ready-to-run lab environment** to learn and master Grafana, Prometheus, and observability workflows. It includes pre-configured setups for Grafana dashboards, Prometheus monitoring, MySQL metrics collection, and SMTP alert notifications, available for both **Docker Compose** and **Kubernetes(Kind)** environments. For more advanced Grafana dashboard configuration and management techniques, please refer to [Grafana-in-Action](). Users can build on this foundation for minor customizations or further development. 
+This repository provides a **portable**, **ready-to-run lab environment** to learn and master Grafana, Prometheus, and observability workflows. It includes pre-configured setups for Grafana dashboards, Prometheus monitoring, MySQL metrics collection, and SMTP alert notifications, available for both **Docker Compose** and **Kubernetes(Kind)** environments. For more advanced Grafana dashboard configuration and management techniques, please take a look at [Grafana-in-Action](https://github.com/Rurutia1027/Grafana-in-Action). Users can build on this foundation for minor customizations or further development. 
 
 
 ## Lab Structure 
@@ -30,6 +30,9 @@ grafana-lab/
 │   │   ├── mysql-service.yaml
 │   │   └── mailhog-deployment.yaml
 │   └── volumes/            # Optional PV/PVC for Grafana & Prometheus
+│
+├── ci/                     # CI/CD pipeline configs
+│   └── ci-pipeline.yaml
 │
 └── README.md
 ```
